@@ -5,11 +5,13 @@ import com.example.spring.member.repository.MemberRepository;
 import com.example.spring.member.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
 //Spring이 서비스를 알고 bean으로 등록해줌.
+@Transactional
 public class MemberService {
     private final MemberRepository memberRepository;
 

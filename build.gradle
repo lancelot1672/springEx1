@@ -16,8 +16,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-	//H2 db
-	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	//H2 db And JPA
+//	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	runtimeOnly 'com.h2database:h2'
 
 	//thymeleaf

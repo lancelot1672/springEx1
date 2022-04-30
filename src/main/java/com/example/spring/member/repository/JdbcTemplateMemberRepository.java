@@ -71,8 +71,9 @@ public class JdbcTemplateMemberRepository implements MemberRepository{
 //            }
 //        };
 //    }
-    
+
     //람다를 이용한 리팩토링
+    //RowMapper의
     private RowMapper<Member> memberRowMapper(){
         return (rs, rowNum)->{
                 Member member = new Member();
