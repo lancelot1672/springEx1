@@ -49,7 +49,12 @@ public class MemberService {
     public List<Member> findMembers(){
         return memberRepository.findAll();
     }
-    public Optional<Member> findOne(Long memberId){
+    public Optional<Member> findById(Long memberId){
         return memberRepository.findById(memberId);
+    }
+
+    //findByName
+    public Optional<Member> findByName(String name) {
+        return memberRepository.findByName(name);
     }
 }
